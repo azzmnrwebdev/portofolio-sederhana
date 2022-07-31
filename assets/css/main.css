@@ -1,0 +1,209 @@
+/* Menyimpan style default yang sudah di tentukan  */
+:root {
+    --primaryColor: #333;
+    --secondaryColor: #05c5c5;
+    --textColor: #888;
+    --bgOneColor: #fff;
+    --bgTwoColor: #f5f5f5;
+}
+
+.playball {
+    font-family: 'Playball',
+        sans-serif;
+}
+
+.poppins {
+    font-family: 'Poppins',
+        sans-serif;
+}
+
+.bg-custom {
+    background-color: var(--bgTwoColor);
+}
+
+.secondaryColor,
+.secondaryColor:hover {
+    color: #26b4b4;
+}
+
+/* Navbar */
+.navbar .navbar-brand {
+    color: var(--primaryColor);
+    font-family: 'Playball',
+        sans-serif;
+    font-size: 24px;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+    color: var(--primaryColor);
+    font-weight: 500;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.4s ease;
+}
+
+.navbar .navbar-nav .nav-item .nav-link:hover {
+    color: var(--secondaryColor);
+}
+
+.navbar .navbar-nav .nav-item .nav-link.active {
+    color: var(--secondaryColor);
+}
+
+.navbar .navbar-toggler,
+.navbar .navbar-toggler:active,
+.navbar .navbar-toggler:focus {
+    border: none;
+    box-shadow: none;
+}
+
+/* Section Home */
+.home {
+    padding: 100px 25px 50px 25px;
+    background-color: var(--bgTwoColor);
+}
+
+.home img {
+    cursor: pointer;
+    border: 3px solid var(--secondaryColor);
+}
+
+.home h2 {
+    font-family: 'Playball',
+        sans-serif;
+}
+
+.home p {
+    color: var(--textColor);
+}
+
+/* Section About */
+.about {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    font-family: 'Poppins',
+        sans-serif;
+    background-color: var(--bgOneColor);
+}
+
+/* Section Portofolio */
+.portofolio {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    font-family: 'Poppins',
+        sans-serif;
+    background-color: var(--bgTwoColor);
+}
+
+.portofolio .card .card-body .card-title {
+    color: var(--primaryColor);
+    font-size: 17px;
+    font-weight: 500;
+    font-family: 'Poppins';
+    transition: all 0.4s ease;
+}
+
+.portofolio .card .card-body .card-text {
+    color: var(--textColor);
+    font-size: 14px;
+    font-family: 'Poppins';
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.portofolio .card .card-body:hover .card-title {
+    color: var(--secondaryColor);
+}
+
+/* section Blog */
+.blog {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    font-family: 'Poppins',
+        sans-serif;
+    background-color: var(--bgOneColor);
+}
+
+.blog .card .card-body .card-title {
+    color: var(--primaryColor);
+    font-size: 17px;
+    font-weight: 500;
+    font-family: 'Poppins';
+    transition: all 0.4s ease;
+}
+
+.blog .card .card-body:hover .card-title {
+    color: var(--secondaryColor);
+}
+
+.blog .card .card-body .card-text {
+    color: var(--textColor);
+    font-size: 14px;
+    font-family: 'Poppins';
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
+.blog .card .card-footer {
+    font-size: 14px;
+}
+
+/* section Contact */
+.contact {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    font-family: 'Poppins',
+        sans-serif;
+    background-color: var(--bgTwoColor);
+}
+
+.contact .form-group .form-label {
+    color: var(--primaryColor);
+}
+
+.contact .form-group .form-control {
+    height: 3.75rem;
+    padding: 0.375rem 1.1875rem;
+    border: none;
+    font-size: 1rem;
+    box-shadow: 0 0.1875rem 1.25rem 0 rgb(0 0 0 / 12%);
+}
+
+.contact .textarea {
+    padding: 0.375rem 1.1875rem;
+    border: none;
+    font-size: 1rem;
+    box-shadow: 0 0.1875rem 1.25rem 0 rgb(0 0 0 / 12%);
+}
+
+/* bagian Back to top */
+#scrollUp {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    z-index: 400;
+    display: none;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+    background: var(--secondaryColor);
+}
+
+#scrollUp span {
+    line-height: 38px;
+    color: #fff;
+}
+
+#scrollUp.scrollActive {
+    display: block;
+}
